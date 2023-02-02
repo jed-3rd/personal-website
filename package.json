@@ -1,4 +1,5 @@
 {
+  "homepage": "http://jed-3rd.github.io/personal-website",
   "name": "jed-dev",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.57.1"
   }
 }
